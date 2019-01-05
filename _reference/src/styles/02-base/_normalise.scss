@@ -1,0 +1,67 @@
+// ========================================================================
+// BASE/NORMALISE
+// ========================================================================
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+small {
+  font-size: 80%;
+  line-height: normal;
+}
+
+strong {
+  font-weight: bold;
+}
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  cursor: pointer;
+  color: inherit;
+
+  &:focus {
+    outline: 1px dashed $col-forrest;
+    outline-offset: 2px;
+  }
+}
+
+input::-ms-reveal {
+  display: none;
+}
+
+button {
+  background: 0;
+  border: 0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+// Set display to block for IE
+
+main {
+  display: block;
+}

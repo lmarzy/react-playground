@@ -1,31 +1,20 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
+import AppRoutes from '../../routes/routes';
+
 import '../../styles/main.scss';
 
 import { Header, Footer } from './components';
-import { Home, About } from '../../routes';
+import { Home, Buttons } from '../../routes';
 
-interface AppProps {
-  a: string;
-  b: number;
-}
-
-export const App = ({ a, b }: AppProps) => (
+export const App = () => (
   <>
     <Header />
     <Router>
       <>
-        <ul data-testid="nav">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
+        <Route exact path={AppRoutes.Home} component={Home} />
+        <Route exact path={AppRoutes.Buttons} component={Buttons} />
       </>
     </Router>
     <Footer />

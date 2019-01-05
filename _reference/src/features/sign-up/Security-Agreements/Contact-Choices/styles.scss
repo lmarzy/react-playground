@@ -1,0 +1,23 @@
+// ========================================================================
+// CONTACT-CHOICES/CONTACT-CHOICE
+// ========================================================================
+
+@import '~sassHelpers';
+
+.contactChoice {
+  margin-bottom: spacer(m);
+
+  > label {
+    margin-bottom: spacer(s);
+  }
+}
+
+.value {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.editBtn {
+  background: none;
+  border: none;
+}

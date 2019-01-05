@@ -1,0 +1,15 @@
+// ========================================================================
+// SHARED/TEXT-LINK
+// ========================================================================
+
+@import '~sassHelpers';
+
+.textLink {
+  font-weight: 700;
+  text-decoration: underline;
+  color: $col-text;
+
+  &:hover {
+    color: $col-forrest;
+  }
+}

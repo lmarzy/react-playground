@@ -1,0 +1,27 @@
+// ========================================================================
+// BASE/FONT-FACE
+// ========================================================================
+
+@font-face {
+  font-family: 'sharpsans';
+  src: url('/assets/fonts/SharpSans-Medium.woff2') format('woff2'),
+    url('/assets/fonts/SharpSans-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sharpsans';
+  src: url('/assets/fonts/SharpSans-Semibold.woff2') format('woff2'),
+    url('/assets/fonts/SharpSans-Semibold.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sharpsans';
+  src: url('/assets/fonts/SharpSans-Bold.woff2') format('woff2'),
+    url('/assets/fonts/SharpSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}

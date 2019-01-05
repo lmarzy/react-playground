@@ -1,0 +1,16 @@
+// ========================================================================
+// SHARED/TEXT-LINK
+// ========================================================================
+
+@import '~sassHelpers';
+
+.textIcon {
+  position: relative;
+  padding-left: 25px;
+
+  svg {
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+}

@@ -1,0 +1,49 @@
+// ========================================================================
+// SHARED/MODAL
+// ========================================================================
+
+@import '~sassHelpers';
+
+.modalWrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+
+  &.query {
+    background-color: rgba($col-slate, 0.8);
+  }
+
+  &.info {
+    background-color: rgba($col-forrest, 0.8);
+  }
+
+  &.warning {
+    background-color: rgba($col-plum, 0.8);
+  }
+}
+
+.modal {
+  position: relative;
+  width: 90%;
+  max-width: $max-width;
+  padding: spacer(l) spacer(s) spacer(s) spacer(s);
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba($col-slate, 0.6);
+}
+
+.title {
+  margin-bottom: spacer(s);
+}
+
+.close {
+  position: absolute;
+  top: spacer(s);
+  right: spacer(s);
+}

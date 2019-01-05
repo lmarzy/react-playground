@@ -1,0 +1,37 @@
+// ========================================================================
+// SHARED/INPUT-PASSWORD
+// ========================================================================
+
+@import '~sassHelpers';
+
+.inputPassword {
+  position: relative;
+  margin-bottom: spacer(s);
+
+  input {
+    padding-right: 50px;
+  }
+}
+
+.passwordRevealBtn {
+  position: absolute;
+  right: 10px;
+  top: 42px;
+
+  svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.capsLock {
+  display: flex;
+  padding: 15px 0;
+  color: $col-plum;
+
+  svg {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+  }
+}

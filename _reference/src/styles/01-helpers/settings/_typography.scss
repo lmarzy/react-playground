@@ -1,0 +1,51 @@
+// ========================================================================
+// SETTINGS/TYPOGRAPHY
+// ========================================================================
+
+// These core setting underpin how the framework functions, by setting the font-size and line height used for typographical styles and baseline grid.
+// The values are defined in pixels here but are converted to more appropriate units when used.
+
+// CORE
+$font-size-px: 15px;
+$line-height-px: 20px; // $font-size-px * 1.25
+
+// TYPE
+
+$font-family: 'sharpsans', sans-serif;
+$font-size: 100%;
+
+$fonts: (
+  h1: (
+    size: 24px,
+    lineHeight: 32px,
+    weight: 700,
+    letterSpacing: -1px,
+  ),
+  h2: (
+    size: 22px,
+    lineHeight: 30px,
+  ),
+  h3: (
+    size: 22px,
+    lineHeight: 32px,
+    weight: 500,
+  ),
+  h4: (
+    size: 18px,
+    lineHeight: 24px,
+    weight: 500,
+  ),
+  h5: (
+    size: 16px,
+    lineHeight: 20px,
+    weight: 700,
+  ),
+  pIntro: (
+    size: 18px,
+    lineHeight: 26px,
+  ),
+  pSmall: (
+    size: 14px,
+    lineHeight: 20px,
+  ),
+);

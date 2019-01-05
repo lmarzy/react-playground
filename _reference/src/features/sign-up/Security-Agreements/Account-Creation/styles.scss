@@ -1,0 +1,16 @@
+// ========================================================================
+// SECURITY-AGREEMENTS
+// ========================================================================
+
+@import '~sassHelpers';
+
+.label {
+  display: block;
+  margin-bottom: 15px;
+  color: $col-forrest;
+}
+
+.disabled {
+  background: none;
+  opacity: 0.5;
+}

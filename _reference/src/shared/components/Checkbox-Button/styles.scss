@@ -1,0 +1,45 @@
+// ========================================================================
+// SHARED/CHECKBOXBUTTON
+// ========================================================================
+
+@import '~sassHelpers';
+
+.checkboxBtn {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 25px;
+  align-items: center;
+  background: darken($col-pebble, 2);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.input {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+
+  &:checked ~ .inner {
+    text-shadow: 0 0 0.4px darken($col-slate, 40);
+
+    .icon {
+      visibility: visible;
+    }
+  }
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  visibility: hidden;
+  margin-right: 8px;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}

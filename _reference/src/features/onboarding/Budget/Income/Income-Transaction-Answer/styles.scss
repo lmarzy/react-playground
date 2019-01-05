@@ -1,0 +1,21 @@
+// ========================================================================
+// ONBOARDING/BUDGET/INCOME/INCOME-TRANSACTION-ANSWER
+// ========================================================================
+
+@import '~sassHelpers';
+
+.answer {
+  position: relative;
+  margin-bottom: spacer(s);
+  padding-right: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  > div {
+    position: absolute;
+    top: 2px;
+    right: 0;
+  }
+}

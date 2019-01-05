@@ -1,0 +1,11 @@
+FROM node:8.11.3
+
+# Create app directory - this moves you into that folder for execution
+WORKDIR  /usr/src/app
+# more package json +
+COPY . .
+# pull dependencies
+RUN yarn
+RUN yarn docker:build
+EXPOSE 80
+ENTRYPOINT [ "node", "server.js" ]

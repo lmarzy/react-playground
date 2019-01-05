@@ -1,0 +1,23 @@
+// ========================================================================
+// TERMS/GOOD-TO-KNOW
+// ========================================================================
+
+@import '~sassHelpers';
+
+.goodToKnow {
+  margin-left: -(spacer(s));
+  margin-right: -(spacer(s));
+  padding: spacer(s);
+  background-color: $col-pebble;
+}
+
+.alert {
+  position: relative;
+
+  div {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+  }
+}

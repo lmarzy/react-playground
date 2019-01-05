@@ -1,0 +1,54 @@
+// ========================================================================
+// SHARED/DEFINITION-LIST-ITEM
+// ========================================================================
+
+@import '~sassHelpers';
+
+.list {
+  padding-left: 25px;
+
+  .label {
+    position: relative;
+
+    svg {
+      position: absolute;
+      left: -25px;
+      top: 2px;
+    }
+  }
+
+  .value {
+    font-weight: 300;
+  }
+}
+
+.label,
+.value {
+  display: inline;
+}
+
+.label {
+  margin-right: 4px;
+  color: $col-forrest;
+  font-weight: 700;
+
+  svg {
+    margin-right: 6px;
+
+    & ~ span {
+      color: $col-text;
+    }
+  }
+}
+
+.value {
+  word-break: break-word;
+  font-weight: 700;
+
+  &::after {
+    content: '\A';
+    display: block;
+    white-space: pre;
+    height: spacer(s);
+  }
+}

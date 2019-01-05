@@ -1,0 +1,25 @@
+// ========================================================================
+// ONBOARDING/BUDGET/INCOME/CURRENT-INCOME
+// ========================================================================
+
+@import '~sassHelpers';
+
+.currentIncome {
+  margin-top: spacer(m);
+  margin-bottom: spacer(l);
+}
+
+.item {
+  position: relative;
+  margin-bottom: 4px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  > div {
+    position: absolute;
+    top: 10px;
+    right: -40px;
+  }
+}

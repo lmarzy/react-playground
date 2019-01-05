@@ -1,0 +1,30 @@
+// ========================================================================
+// SHARED/COMPONENTS/HELP-TOOLTIP
+// ========================================================================
+
+@import '~sassHelpers';
+
+.helpTooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.helpBtn {
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  &.active {
+    svg path:first-child {
+      fill: $col-slate;
+    }
+  }
+}
+
+.alert {
+  position: absolute;
+  top: calc(100% + 3px);
+  right: -10px;
+  min-width: 260px;
+}

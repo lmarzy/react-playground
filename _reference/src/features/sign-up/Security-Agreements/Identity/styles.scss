@@ -1,0 +1,59 @@
+// ========================================================================
+// IDENTITY/DATE-OF-BIRTH
+// ========================================================================
+
+@import '~sassHelpers';
+
+.title {
+  margin-bottom: spacer(s);
+  font-size: font-size(s);
+  color: $col-forrest;
+}
+
+.inputs {
+  display: flex;
+  margin-bottom: spacer(s);
+  margin-left: -10px;
+}
+
+.dobDay,
+.dobMonth,
+.dobYear {
+  padding-left: 10px;
+}
+
+.dobDay,
+.dobMonth {
+  flex: 2;
+}
+
+.dobYear {
+  flex: 3;
+}
+
+.alert {
+  p:last-of-type {
+    display: inline;
+    margin-right: 6px;
+  }
+  button {
+    color: white;
+  }
+}
+
+.invalid {
+  border-color: red;
+}
+
+.tooltip {
+  position: relative;
+  text-align: center;
+
+  div {
+    position: absolute;
+    top: calc(100% + 0.625rem);
+    left: 0;
+    right: 0;
+    margin-bottom: spacer(m);
+  }
+}

@@ -1,0 +1,14 @@
+// ========================================================================
+// UTILITIES/FONTS
+// ========================================================================
+
+@each $item, $value in $fonts {
+  .u-#{$item} {
+    @include fonts(
+      map-get($value, size),
+      map-get($value, lineHeight),
+      map-get($value, weight),
+      map-get($value, letterSpacing)
+    );
+  }
+}

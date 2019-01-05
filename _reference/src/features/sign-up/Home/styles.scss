@@ -1,0 +1,21 @@
+// ========================================================================
+// SIGN-UP/HOME
+// ========================================================================
+
+@import '~sassHelpers';
+
+.page {
+  text-align: center;
+}
+
+.tooltip {
+  position: relative;
+
+  div {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    margin-bottom: spacer(s);
+  }
+}

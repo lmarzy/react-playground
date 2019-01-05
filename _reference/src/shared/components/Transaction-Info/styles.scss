@@ -1,0 +1,54 @@
+// ========================================================================
+// SHARED/TRANSACTION-INFO
+// ========================================================================
+
+@import '~sassHelpers';
+
+.transactionInfo {
+  display: table;
+  width: calc(100% + 40px);
+  margin-left: -(spacer(s));
+  margin-right: -(spacer(s));
+  padding: spacer(m) spacer(s);
+  background-color: $col-pebble;
+}
+
+.icon,
+.body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.icon {
+  width: 60px;
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.term {
+  @include hidden-visually;
+}
+
+.from,
+.amount {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.descTerm,
+.desc {
+  display: inline-block;
+}
+
+.descTerm {
+  margin-bottom: 10px;
+  margin-right: 4px;
+}
+
+.date,
+.recurring {
+  margin-bottom: spacer(t);
+}

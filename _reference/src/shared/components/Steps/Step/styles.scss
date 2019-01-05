@@ -1,0 +1,49 @@
+// ========================================================================
+// SHARED/STEPS/STEP
+// ========================================================================
+
+@import '~sassHelpers';
+
+.step {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-left: -(spacer(s));
+  margin-right: -(spacer(s));
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  &.active {
+    background-image: url(#{$assetPath}/images/progress-pathway.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+
+    .title {
+      margin-bottom: spacer(t);
+      color: white;
+      font-weight: 700;
+    }
+  }
+}
+
+.inner {
+  padding: 0 0 5px 5px;
+  background: $col-forrest;
+}
+
+.title,
+.detail {
+  display: block;
+  color: $col-maya;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.detail {
+  max-width: 170px;
+  margin: 0 auto;
+}

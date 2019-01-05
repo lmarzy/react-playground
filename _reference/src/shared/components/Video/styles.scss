@@ -1,0 +1,28 @@
+// ========================================================================
+// SHARED/VIDEO
+// ========================================================================
+
+@import '~sassHelpers';
+
+.videoContainer {
+  display: none;
+
+  &.isPlaying {
+    display: block;
+    margin-bottom: spacer(m);
+  }
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+.videoImage {
+  width: 100%;
+  margin-bottom: spacer(m);
+
+  img {
+    width: 100%;
+  }
+}

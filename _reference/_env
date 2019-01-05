@@ -1,0 +1,6 @@
+# When using Safari on BrowserStack it cannot resolve localhost so we've had to use loopback. See https://www.browserstack.com/question/663
+CORE_API_BASE_URL=http://core.tully.local/v1
+CORE_AUTH_BASE_URL=http://core.auth.tully.local
+CORE_ASSET_URL=https://fwftest-cdn.azureedge.net/fwf-web-assets
+GA_ACCOUNT_ID=UA-125737985-3
+USE_DEBUG=true

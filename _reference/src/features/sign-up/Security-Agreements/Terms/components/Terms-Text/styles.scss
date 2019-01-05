@@ -1,0 +1,19 @@
+// ========================================================================
+// TERMS/TERMS-TEXT
+// ========================================================================
+
+@import '~sassHelpers';
+
+.termsText {
+  height: 240px;
+  margin-bottom: spacer(l);
+  overflow-y: scroll;
+
+  h5 {
+    margin-bottom: spacer(s);
+  }
+
+  p:not(:last-child) {
+    margin-bottom: spacer(s);
+  }
+}

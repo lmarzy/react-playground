@@ -1,0 +1,11 @@
+// FUNCTION - COLORS
+
+// sass maps function for colour usage = color: colour(colour); e.g color: colour(forrest);
+
+@function color($key) {
+  @if not map-has-key($colorsMap, $key) {
+    @warn "Unknown `#{$key}` in $colorsMap.";
+  }
+
+  @return map-get($colorsMap, $key);
+}

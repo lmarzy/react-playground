@@ -1,0 +1,3 @@
+CORE_API_BASE_URL=https://api.fairwayforward.com/v1
+GA_ACCOUNT_ID=UA-125737985-2
+USE_DEBUG=false

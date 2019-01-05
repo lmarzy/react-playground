@@ -1,0 +1,40 @@
+// ========================================================================
+// ONBOARDING/SHARED/COMPONENTS/COUNTER
+// ========================================================================
+
+@import '~sassHelpers';
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.wrap {
+  display: flex;
+  margin-left: auto;
+}
+
+.input {
+  width: 60px;
+  font-size: 24px;
+  border: 0;
+  text-align: center;
+  background-color: white;
+  opacity: 1;
+
+  &:disabled {
+    opacity: 1;
+    color: $col-text;
+  }
+}
+
+.button {
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  &:disabled svg path {
+    fill: lighten($col-slate, 25);
+  }
+}

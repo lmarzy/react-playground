@@ -1,0 +1,45 @@
+// ========================================================================
+// SETTINGS/COLOURS
+// ========================================================================
+
+// PAGE
+$col-bg: #fff;
+$col-text: #5a6073;
+
+$col-forrest: #1eb285;
+$col-plum: #ad5c7c;
+$col-citrus: #f9c13b;
+$col-slate: #5a6073;
+$col-maya: #bdf7ef;
+$col-peony: #fed8d7;
+$col-lemon: #fef0c2;
+$col-pebble: #f0f4f7;
+
+$colorsMap: (
+  forrest: $col-forrest,
+  plum: $col-plum,
+  citrus: $col-citrus,
+  slate: $col-slate,
+  maya: $col-maya,
+  peony: $col-peony,
+  lemon: $col-lemon,
+  pebble: $col-pebble,
+);
+
+// BUTTONS
+$col-button-primary: pink;
+$col-button-secondary: purple;
+
+$col-border: #cccccc;
+
+// STATES
+$col-disabled: #adb0b9;
+
+// LINKS
+$col-links: #055edb;
+$col-links-hover: #052aa1;
+$col-links-active: #052aa1;
+$col-links-visited: #052aa1;
+
+// MISC
+$col-borders: #ccc;

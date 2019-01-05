@@ -1,0 +1,63 @@
+// ========================================================================
+// SHARED/CHECKBOXBUTTON
+// ========================================================================
+
+@import '~sassHelpers';
+
+$bg-color: $col-pebble;
+
+.container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+  overflow: hidden;
+  border-radius: 6px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.input {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+
+  &:checked ~ .inner {
+    &.tick {
+      svg {
+        display: inline-block;
+      }
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &:hover:not(:disabled):not(:checked) ~ .inner,
+  &:focus:not(:disabled):not(:checked) ~ .inner {
+    background-color: darken($bg-color, 5);
+  }
+
+  &:disabled ~ .inner {
+    opacity: 0.4;
+    cursor: text;
+  }
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $bg-color;
+  border-radius: 25px;
+  transition: background-color 250ms ease-in;
+
+  svg {
+    margin-right: 10px;
+  }
+
+  &.tick {
+    svg {
+      display: none;
+    }
+  }
+}

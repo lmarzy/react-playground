@@ -1,0 +1,15 @@
+// ========================================================================
+// TOOLS/MIXINS/VERTICAL-RHYTHM
+// ========================================================================
+
+// Usage
+
+@mixin fonts($size, $lineHeight, $weight, $letterSpacing: null) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+
+  @if ($letterSpacing != null) {
+    letter-spacing: $letterSpacing;
+  }
+}

@@ -1,0 +1,24 @@
+// ========================================================================
+// SHARED/LOADING
+// ========================================================================
+
+@import '~sassHelpers';
+
+.loading {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $col-forrest;
+  background-image: url(#{$assetPath}/images/loading-pathway.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  position: relative;
+  width: 130px;
+  padding-top: 20px;
+  background-color: $col-forrest;
+}

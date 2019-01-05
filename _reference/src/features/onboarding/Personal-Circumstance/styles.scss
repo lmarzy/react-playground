@@ -1,0 +1,40 @@
+// ========================================================================
+// SHARED/CHECKBOXBUTTON
+// ========================================================================
+
+@import '~sassHelpers';
+
+.cloud {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: spacer(l);
+
+  li {
+    padding: 4px;
+  }
+}
+
+.effectYou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 260px;
+  margin-bottom: spacer(s);
+
+  li {
+    margin-bottom: spacer(t);
+  }
+}
+
+.tooltip {
+  position: relative;
+  margin-bottom: spacer(l);
+
+  div {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    margin-bottom: spacer(s);
+  }
+}

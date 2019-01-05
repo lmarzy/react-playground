@@ -1,0 +1,84 @@
+// ========================================================================
+// SHARED/BUTTON
+// ========================================================================
+
+@import '~sassHelpers';
+
+$col-main: $col-forrest;
+$col-alt: $col-slate;
+
+.button {
+  display: inline-block;
+  align-items: center;
+  color: white;
+}
+
+.primary {
+  min-height: 50px;
+  min-width: 170px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 0;
+  border-radius: 25px;
+  font-weight: 700;
+
+  svg {
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+  }
+}
+
+.secondary {
+  min-height: 42px;
+  min-width: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.main {
+  background-color: $col-main;
+  box-shadow: 0 4px 8px 0 rgba($col-slate, 0.4);
+  transition: background-color 150ms ease-in;
+
+  &:hover,
+  &:focus {
+    background-color: darken($col-main, 5);
+  }
+}
+
+.alt {
+  background-color: $col-alt;
+  transition: background-color 150ms ease-in;
+
+  &:hover,
+  &:focus {
+    background-color: darken($col-alt, 5);
+  }
+}
+
+.invert {
+  background-color: white;
+  color: $col-slate;
+  box-shadow: 0 4px 8px 0 rgba($col-alt, 0.4);
+
+  &:hover,
+  &:focus {
+    background-color: darken(white, 5);
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.disabled {
+  background-color: $col-disabled;
+  cursor: default;
+  &:hover,
+  &:focus {
+    background-color: $col-disabled;
+  }
+}

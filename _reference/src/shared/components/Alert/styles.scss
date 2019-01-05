@@ -1,0 +1,64 @@
+// ========================================================================
+// SHARED/ALERT
+// ========================================================================
+
+@import '~sassHelpers';
+
+.alert {
+  position: relative;
+  padding: spacer(s);
+  text-align: left;
+  color: white;
+  background-color: $col-slate;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba($col-slate, 0.4);
+  z-index: 10;
+
+  &.arrowcenter::before,
+  &.arrowright::before,
+  &.arrowleft::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid $col-slate;
+  }
+
+  &.arrowcenter::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.arrowright::before {
+    right: 14px;
+  }
+
+  &.arrowleft::before {
+    left: 14px;
+  }
+
+  &.hasCloseBtn {
+    padding-top: 40px;
+  }
+
+  &.error {
+    background-color: $col-plum;
+
+    &::before {
+      border-bottom: 5px solid $col-plum;
+    }
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}

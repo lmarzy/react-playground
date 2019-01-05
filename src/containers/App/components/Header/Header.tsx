@@ -1,7 +1,8 @@
 import * as React from 'react';
+import './styles.scss';
 
 export const Header = () => (
-  <header>
-    <h1>React Typescript App</h1>
+  <header className="header">
+    <h1>React Playground</h1>
   </header>
 );

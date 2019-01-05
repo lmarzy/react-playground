@@ -1,0 +1,16 @@
+// ========================================================================
+// ELEMENTS/TYPOGRAPHY
+// ========================================================================
+
+@each $item, $value in $fonts {
+  @if (str-index($item, 'h')) {
+    #{$item} {
+      @include fonts(
+        map-get($value, size),
+        map-get($value, lineHeight),
+        map-get($value, weight),
+        map-get($value, letterSpacing)
+      );
+    }
+  }
+}

@@ -1,0 +1,26 @@
+// ========================================================================
+// VIEWS/BUTTON
+// ========================================================================
+
+@import '~sassHelpers';
+
+.button {
+  display: inline-block;
+  padding: spacer(2);
+  vertical-align: middle;
+  text-align: center;
+  border: 0;
+  border-radius: 6px;
+
+  &--primary {
+    background-color: color(a);
+  }
+
+  &--secondary {
+    background-color: color(b);
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+// ========================================================================
+// SIGN-UP/ALL-SET
+// ========================================================================
+
+@import '~sassHelpers';
+
+.page {
+  min-height: 100vh;
+  text-align: center;
+  background-color: $col-forrest;
+
+  h1 {
+    color: white;
+  }
+}

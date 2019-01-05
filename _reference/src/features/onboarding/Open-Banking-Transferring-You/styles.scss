@@ -1,0 +1,64 @@
+// ========================================================================
+// ONBOARDING/OPEN-BANKING/TRANSFERRING-YOU
+// ========================================================================
+
+@import '~sassHelpers';
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-15px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.header {
+  margin-bottom: spacer(m);
+  padding: spacer(m) spacer(s) 0 spacer(s);
+}
+
+.balloon {
+  margin-bottom: spacer(m);
+  animation: float 4s ease-in-out infinite;
+}
+
+.title {
+  color: $col-forrest;
+}
+
+.loading {
+  position: relative;
+  height: 4px;
+  margin-bottom: spacer(l);
+  background: $col-lemon;
+  border-radius: 25px;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: $col-citrus;
+    animation: loading 3s ease-in infinite;
+  }
+}
+
+.openwrks {
+  width: 100px;
+  padding-top: 12px;
+}

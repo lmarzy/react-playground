@@ -1,0 +1,73 @@
+// ========================================================================
+// SHARED/ACCORDION
+// ========================================================================
+
+@import '~sassHelpers';
+
+.container {
+  text-align: left;
+  dt:last-child,
+  dd:last-child {
+    border: 0;
+  }
+}
+
+.header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid $col-pebble;
+
+  &.active {
+    border-bottom: 0;
+
+    .button svg:last-child {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.button {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: left;
+  transition: transform 300ms ease-in;
+
+  > svg:first-child {
+    width: 40px;
+    height: 40px;
+    margin-right: spacer(s);
+  }
+
+  > svg:last-child {
+    margin-left: auto;
+  }
+}
+
+.body {
+  padding-bottom: 50px;
+  border-bottom: 2px solid $col-pebble;
+}
+
+.complete,
+.invalid {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.invalid {
+  display: flex;
+  align-items: center;
+  color: $col-plum;
+
+  svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 6px;
+  }
+}
+
+.title {
+  font-size: 22px;
+}

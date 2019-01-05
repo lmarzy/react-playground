@@ -1,0 +1,37 @@
+// ========================================================================
+// SHARED/ICON
+// ========================================================================
+
+@import '~sassHelpers';
+
+.icon {
+  display: inline-block;
+}
+
+.white {
+  fill: white;
+}
+
+.slate {
+  fill: $col-slate;
+}
+
+.forrest {
+  fill: $col-forrest;
+}
+
+.lemon {
+  fill: $col-lemon;
+}
+
+.citrus {
+  fill: $col-citrus;
+}
+
+.plum {
+  fill: $col-plum;
+}
+
+.inActive {
+  fill: rgba($col-slate, 0.5);
+}

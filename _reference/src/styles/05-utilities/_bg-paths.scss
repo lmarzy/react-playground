@@ -1,0 +1,33 @@
+// ========================================================================
+// UTILITIES/BG-PATHS
+// ========================================================================
+
+.u-bg-path {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  margin-left: -(spacer(s));
+  margin-right: -(spacer(s));
+  flex-direction: column;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+
+  &.path-1 {
+    background-image: url(#{$assetPath}/images/pathway-1.svg);
+  }
+  &.path-2 {
+    background-image: url(#{$assetPath}/images/pathway-2.svg);
+  }
+  &.path-3 {
+    background-image: url(#{$assetPath}/images/pathway-3.svg);
+  }
+  &.path-4 {
+    background-image: url(#{$assetPath}/images/pathway-4.svg);
+  }
+  &.path-5 {
+    background-image: url(#{$assetPath}/images/pathway-5.svg);
+  }
+}

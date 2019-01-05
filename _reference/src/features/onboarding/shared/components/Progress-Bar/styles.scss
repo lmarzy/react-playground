@@ -1,0 +1,33 @@
+// ========================================================================
+// ONBOARDING/SHARED/COMPONENTS/PROGRESS-BAR
+// ========================================================================
+
+@import '~sassHelpers';
+
+.container {
+  display: flex;
+
+  li {
+    flex: 1;
+    padding: 6px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      border-right: 1px solid white;
+    }
+  }
+}
+
+.inActive {
+  background: #a8a6a6;
+}
+
+.active {
+  background-color: #1985e9;
+}
+
+.complete {
+  background-color: #6eda17;
+}

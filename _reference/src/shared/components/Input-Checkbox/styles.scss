@@ -1,0 +1,40 @@
+// ========================================================================
+// SHARED/INPUT-CHECKBOX
+// ========================================================================
+
+@import '~sassHelpers';
+
+.checkbox {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+  svg {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+  }
+}
+
+.input {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+
+  &:focus ~ span {
+    outline: 1px dashed $col-forrest;
+    outline-offset: -1px;
+  }
+
+  &:checked ~ span {
+    font-weight: 700;
+  }
+}
+
+.label {
+  margin-left: 8px;
+}
+
+.disabled {
+  opacity: 0.5;
+}

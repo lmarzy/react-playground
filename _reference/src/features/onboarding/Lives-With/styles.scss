@@ -1,0 +1,35 @@
+// ========================================================================
+// ONBOARDING/HOME
+// ========================================================================
+
+@import '~sassHelpers';
+
+.item {
+  padding-top: spacer(l);
+  padding-bottom: spacer(l);
+  border-bottom: 2px solid $col-pebble;
+
+  p {
+    margin-top: 15px;
+  }
+
+  label span {
+    font-weight: 700;
+  }
+}
+
+.itemLast {
+  margin-bottom: spacer(s);
+  border: 0;
+}
+
+.mePartner {
+  svg {
+    order: 2;
+    margin-left: auto;
+  }
+  span {
+    order: 1;
+    margin-left: 0;
+  }
+}

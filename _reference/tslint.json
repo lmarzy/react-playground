@@ -1,0 +1,34 @@
+{
+  "extends": ["tslint:latest", "tslint-config-airbnb", "tslint-config-prettier", "tslint-react-a11y"],
+  "rules": {
+    "member-ordering": [false, { "order": "fields-first" }],
+    "no-empty": false,
+    "import-name": [false],
+    "member-access": [true, "no-public"],
+    "interface-name": [true, "never-prefix"],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"],
+    "no-implicit-dependencies": [false, "dev"],
+    "ordered-imports": false,
+    "object-literal-sort-keys": [false],
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "components": ["Label"],
+        "required": {
+          "some": ["nesting", "id"]
+        },
+        "allowChildren": false
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"]
+      }
+    ],
+    "no-angle-bracket-type-assertion": false,
+    "no-object-literal-type-assertion": false,
+    "no-submodule-imports": [true, "rxjs"]
+  }
+}

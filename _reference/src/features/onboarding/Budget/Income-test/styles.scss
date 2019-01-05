@@ -1,0 +1,29 @@
+@import '~sassHelpers';
+
+.answerList {
+  position: relative;
+
+  li {
+    position: relative;
+    margin-bottom: spacer(s);
+
+    div:first-child {
+      position: absolute;
+      top: 2px;
+      right: 0;
+    }
+
+    ul {
+      margin-top: spacer(s);
+      margin-bottom: spacer(m);
+
+      li {
+        margin-bottom: 4px;
+
+        div:first-child {
+          top: 10px;
+        }
+      }
+    }
+  }
+}

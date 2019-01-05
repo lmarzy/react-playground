@@ -1,0 +1,54 @@
+// ========================================================================
+// SHARED/FORM-GROUP
+// ========================================================================
+
+@import '~sassHelpers';
+
+.label {
+  display: block;
+  margin-bottom: 15px;
+  color: $col-forrest;
+  font-weight: 700;
+}
+
+.inputWrap {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.none {
+    svg {
+      left: 8px;
+    }
+    input {
+      padding-left: 30px;
+    }
+  }
+
+  &.edit {
+    svg {
+      right: 8px;
+    }
+    input {
+      padding-right: 30px;
+    }
+  }
+}
+
+.input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  border: 1px solid $col-slate;
+  border-radius: 4px;
+}
+
+.isInvalid {
+  border-color: $col-plum;
+}

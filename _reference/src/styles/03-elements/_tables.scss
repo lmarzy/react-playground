@@ -1,0 +1,11 @@
+// ========================================================================
+// ELEMENTS/TABLES
+// ========================================================================
+
+// Remove default table spacing and ensure tables fill up all available space
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}

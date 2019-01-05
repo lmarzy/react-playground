@@ -1,7 +1,5 @@
-$col-bg: red;
-$col-text: white;
-
-body {
-  background: $col-bg;
-  color: $col-text;
-}
+@import './01-helpers/helpers';
+@import './02-base/base';
+@import './03-elements/elements';
+@import './04-layout/layout';
+@import './05-utilities/utilities';

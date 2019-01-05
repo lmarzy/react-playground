@@ -13,9 +13,9 @@ export class Home extends React.Component<{}, HomeState> {
     const { title } = this.state;
 
     return (
-      <div className="home">
-        <h1>{title}</h1>
-      </div>
+      <section className="home">
+        <h2>{title}</h2>
+      </section>
     );
   }
 }

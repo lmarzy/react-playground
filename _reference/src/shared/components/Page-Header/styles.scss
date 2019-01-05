@@ -1,0 +1,33 @@
+// ========================================================================
+// SHARED/PAGE-HEADER
+// ========================================================================
+
+@import '~sassHelpers';
+
+.pageHeader {
+  position: relative;
+  margin-bottom: spacer(m);
+  padding: spacer(s) spacer(s) 0 spacer(s);
+  text-align: center;
+
+  h1 {
+    color: $col-forrest;
+  }
+
+  svg {
+    margin-bottom: spacer(s);
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.alt {
+  padding-bottom: 35px;
+  background: url(#{$assetPath}/images/curved-divide.svg) no-repeat bottom left,
+    linear-gradient($col-forrest 65%, white 35%);
+  background-size: cover;
+
+  h1 {
+    color: white;
+  }
+}

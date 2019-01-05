@@ -1,0 +1,26 @@
+// ========================================================================
+// SHARED/INPUT-RADIO
+// ========================================================================
+
+@import '~sassHelpers';
+
+.checkbox {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.input {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}
+
+.label {
+  margin-left: 8px;
+}

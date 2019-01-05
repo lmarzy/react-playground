@@ -1,0 +1,21 @@
+// ========================================================================
+// SHARED/PILL
+// ========================================================================
+
+@import '~sassHelpers';
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px;
+  background: $col-pebble;
+  border-radius: 25px;
+
+  svg {
+    margin-right: 6px;
+  }
+}
+
+.text {
+  text-shadow: 0 0 0.4px darken($col-slate, 40);
+}

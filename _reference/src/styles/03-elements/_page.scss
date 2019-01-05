@@ -1,0 +1,38 @@
+// ========================================================================
+// ELEMENTS/PAGE
+// ========================================================================
+
+// min-height - Ensures the page fills at least the entire height of the viewport
+// box-sizing -  Set to border-box to prevent sizing issues with padding and borders
+// font-size - Set to 100%, this allows the site to adapt to the font size being used by the browser instead of forcing this value on the user
+// font-family -  Set to allow the font to cascade to all elements
+// line-height -  For overall site line height and vertical rhytym, should be a unitless value
+// color - Set for all text elements
+// background-color - Set for page background colour
+// -ms* - Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+
+html {
+  min-height: 100%;
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: normal;
+  color: $col-text;
+  background-color: $col-bg;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-size: 15px;
+  line-height: 20px;
+
+  &.modal-open {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+  }
+}
+
+main {
+  padding: 0 spacer(s) spacer(s) spacer(s);
+}
